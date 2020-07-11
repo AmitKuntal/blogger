@@ -5,6 +5,11 @@
   background-color: white;
 }
 
+.opacity{
+  opacity: 0.3;
+}
+
+
 .secondarybackgroundcolor{
   background-color: black;
 }
