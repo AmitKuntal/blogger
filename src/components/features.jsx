@@ -19,7 +19,7 @@ function Features() {
               <SignIn count ={1} text="Get Started" color="text-green-400"/>
             </div>
         </div>
-        <div className="container w-auto mt-16 flex flex-col sm:flex-col md:flex-row items-center justify-center mt-4">
+        <div className="container w-auto mt-16 flex flex-col sm:flex-col md:flex-row justify-center mt-4">
             <div className="text-gray-800 p-2 pr-4 flex items-center text-lg m-2">
                 <div className="items-center flex justify-center text-white bg-green-600 mr-2 rounded-full text-xl w-8 h-8 shadow-2xl">
                   <FontAwesomeIcon icon={faCheck} color={'white'} size={'md'}/>
