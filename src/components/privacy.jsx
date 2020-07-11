@@ -41,7 +41,7 @@ function Privacy(props) {
             </div>
         </div>
         <div className="w-full flex flex-row justify-center items-center">
-            <div className="mt-16 w-4/5 md:w-1/4 mb-16 ">
+            <div className="mt-16 w-4/5 md:w-1/4">
                 <ColoredLine color="black" />
             </div>
         </div>
