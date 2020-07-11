@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './../components/button';
+import SignIn from './signin';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,14 +9,14 @@ function Features() {
   return ( 
       <div className="flex flex-col items-center w-auto justify-center">
         <div className="w-4/5 md:w-2/4 container  flex items-center justify-center">
-          <div className="p-4 pr-4 text-white primarybuttoncolor w-full md:w-2/4 flex justify-center">
-            <Button />
+          <div className="p-4 pr-4 primarybuttoncolor w-full md:w-2/4 flex justify-center">
+           <SignIn count ={2} text="Get Started" />
           </div>
         </div>
         <div className="container w-4/5 md:w-2/4 flex flex-col items-center justify-center mt-4">
               Already have an account?
-            <div className="text-green-400">
-              Sign in.
+            <div>
+              <SignIn count ={1} text="Get Started" color="text-green-400"/>
             </div>
         </div>
         <div className="container w-auto mt-16 flex flex-col sm:flex-col md:flex-row items-center justify-center mt-4">
