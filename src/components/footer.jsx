@@ -4,8 +4,8 @@ import SignIn from './signin';
 function Footer(props) {
     
   return (
-      <div className="w-full flex flex-row justify-center secondarybackgroundcolor p-8">
-            <div className="w-4/5 font-bold container flex flex-col items-start h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8">
+      <div className="w-full flex flex-row justify-center secondarybackgroundcolor">
+            <div className="w-4/5 font-bold container flex flex-col items-start sm:text-md p-8">
                 <div className="text-2xl block sm:pr-0 md:pr-0 lg-pr-8 xl-pr-8">
                     <button className="font-serif font-extrabold text-white">B</button>
                 </div> 
@@ -24,7 +24,7 @@ function Footer(props) {
                     </li>
                     
                 </ul>
-                <ul className="mt-4 flex items-center flex-row justify-between" >
+                <ul className="mt-4 flex flex-row flex-wrap justify-between" >
                     <li className="mr-4">
                         <a className="text-white" href="#">About Blogger</a>
                     </li>
