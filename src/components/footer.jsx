@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Button from './button';
-
+import SignIn from './signin';
 function Footer(props) {
     
   return (
@@ -12,7 +11,7 @@ function Footer(props) {
                 </div> 
                 <ul className="mt-4 flex items-center flex-row justify-start" >
                     <li className="mr-4">
-                        <a className="text-white" href="#">Get Started</a>
+                        <SignIn count ={2} text="Get Started" color= "font-bold" />
                     </li>
                     <li className="mr-4">
                         <a className="text-white" href="#">Subscribe</a>
@@ -21,7 +20,7 @@ function Footer(props) {
                         Have an account?
                     </li>
                     <li className="mr-4">
-                        <a className="text-white" href="#"> Sign in</a>
+                        <SignIn count ={1} text="Sign in" color = "text-white" />
                     </li>
                     
                 </ul>

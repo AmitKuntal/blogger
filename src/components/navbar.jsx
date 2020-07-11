@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Button from './button';
+import SignIn from './signin';
 
 function Navbar(props) {
     
@@ -23,12 +23,12 @@ function Navbar(props) {
                     <a className="text-black" href="#">Write</a>
                 </li>
                 <li className="mr-2">
-                    <a className="text-black" href="#">Sign in</a>
+                    <SignIn count ={1} text="Sign in"/>
                 </li>
                 
             </ul>
-            <div className="px-2 py-2 pl-4 pr-4 text-white primarybuttoncolor w-auto">
-               <Button/>
+            <div className="px-2 py-2 pl-4 pr-4 primarybuttoncolor w-auto">
+                <SignIn count ={2} text="Get Started"/>
             </div> 
         </nav>
         </div>

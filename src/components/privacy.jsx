@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Button from './button';
-
+import SignIn from './signin';
 function Privacy(props) {
     const ColoredLine = ({ color }) => (
         <hr
@@ -29,8 +28,8 @@ function Privacy(props) {
             <div className="ml-4 mt-24 container w-full flex flex-row items-end flex-wrap-reverse md:flex-no-wrap justify-center h-auto text-black bg-black-200">
                 <div className="w-full flex justify-center">
                     <div className="w-2/3 primarybuttoncolor mt-10 md:m-0">
-                        <div className="p-4 pr-4 text-white primarybuttoncolor w-full flex justify-center text-center">
-                            <Button />
+                        <div className="p-4 pr-4 primarybuttoncolor w-full flex justify-center text-center">
+                        <SignIn count ={2} text="Get Started" />
                         </div>
                     </div>   
                 </div>
