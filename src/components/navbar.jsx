@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import SignIn from './signin';
+import Search from './search';
+import Profile from './profile';
 
 function Navbar(props) {
     
@@ -14,22 +16,30 @@ function Navbar(props) {
             </div>
             <div className="text-2xl hidden sm:hidden md:block sm:pr-0 md:pr-0 lg-pr-8 xl-pr-8">
                 <button className="font-serif font-extrabold">Blogger</button>
-            </div> 
-            <ul className="w-2/3 hidden sm:hidden md:flex lg:flex items-center justify-end" >
-                <li className="mr-2">
-                    <a className="text-black" href="#">Subsribe</a>
-                </li>
-                <li className="mr-2">
-                    <a className="text-black" href="#">Write</a>
-                </li>
-                <li className="mr-2">
-                    <SignIn count ={1} text="Sign in"/>
-                </li>
-                
-            </ul>
-            <div className="px-2 py-2 pl-4 pr-4 primarybuttoncolor w-auto">
-                <SignIn count ={2} text="Get Started"/>
-            </div> 
+            </div>                 
+                {props.login?<Search />
+                :<ul className="w-2/3 hidden sm:hidden md:flex lg:flex items-center justify-end" >
+
+                    <li className="mr-2">
+                        <a className="text-black" href="#">Subsribe</a>
+                    </li>
+                    <li className="mr-2">
+                        <a className="text-black" href="#">Write</a>
+                    </li>
+                    <li className="mr-2">
+                        <SignIn count ={1} text="Sign in"/>
+                    </li>
+                          
+                 </ul>
+                }
+             {
+             props.login ?
+              <Profile/>:
+                <div className="px-2 py-2 pl-4 pr-4 primarybuttoncolor w-auto">
+                    <SignIn count ={2} text="Get Started"/>
+                </div>
+             }   
+            
         </nav>
         </div>
   );
