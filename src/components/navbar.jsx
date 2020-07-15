@@ -3,12 +3,13 @@ import {connect} from 'react-redux';
 import SignIn from './signin';
 import Search from './search';
 import Profile from './profile';
+import ScrollableMenu from './scrollablemenu';
 
 function Navbar(props) {
     
   return (
-      <div className="fixed w-full flex justify-center mainbackgroundcolor">
-        <nav className="font-bold container w-full flex items-center justify-between p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8">
+      <div className="w-full fixed flex flex-row flex-wrap justify-center mainbackgroundcolor">
+        <nav className="font-bold w-full container  flex items-center justify-between p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8">
             <div className="block sm:block md:hidden sm:mr-2 md:mr-2 lg:mr-6 xl:mr-6">
                     <a className="text-white hover:text-gray-200" href="#">
                         <img  className="w-12 h-12 max-w-md" src={require('./../logo.png')} />
@@ -41,6 +42,7 @@ function Navbar(props) {
              }   
             
         </nav>
+        { props.login ?<ScrollableMenu />:null}
         </div>
   );
 }
