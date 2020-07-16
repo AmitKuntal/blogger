@@ -8,7 +8,7 @@ import ScrollableMenu from './scrollablemenu';
 function Navbar(props) {
     
   return (
-      <div className="w-full fixed flex flex-row flex-wrap justify-center mainbackgroundcolor">
+      <div className={props.login?"w-full flex flex-row flex-wrap justify-center mainbackgroundcolor":"w-full fixed flex flex-row flex-wrap justify-center mainbackgroundcolor"}>
         <nav className="font-bold w-full container  flex items-center justify-between p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8">
             <div className="block sm:block md:hidden sm:mr-2 md:mr-2 lg:mr-6 xl:mr-6">
                     <a className="text-white hover:text-gray-200" href="#">
