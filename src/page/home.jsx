@@ -7,12 +7,13 @@ import Features from './../components/features';
 import Privacy from './../components/privacy';
 import Tagline from './../components/tagline';
 import Footer from './../components/footer';
+import Dashboard  from './../components/dashboard';
 function Home(props) {
   return ( 
       <div className="mainbackgroundcolor">
         <Navbar />
        {
-        props.login ? null :
+        props.login ? <Dashboard /> :
        <>
        <HomePageTitile />
         <Tags />
