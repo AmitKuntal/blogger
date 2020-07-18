@@ -6,10 +6,9 @@ import Stories from './stories';
 function Dashboard(props) {
   return (
     <div className="w-full flex flex-row flex-wrap justify-center mainbackgroundcolor">
-        <div className="font-bold w-full container flex items-center justify-end p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8"> 
+        <div className="font-bold w-full container flex items-start justify-start p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8"> 
             <Stories />
-            <SideMenu />   
-            
+            <SideMenu />          
       </div>
     </div>
   );

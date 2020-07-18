@@ -2,8 +2,8 @@ import React from 'react';
 
 function TopStories(props) {
   return ( 
-         <div className="w-full flex flex-row items-center mt-8">
-                <div className="w-1/3 text-gray-400 font-medium text-3xl">
+         <div className="w-full flex flex-row items-start mt-4">
+                <div className="w-1/4 text-gray-400 font-medium text-3xl">
                     {props.count}
                 </div>
                 <div className="w-full flex flex-col">
