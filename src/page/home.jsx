@@ -11,7 +11,7 @@ import Dashboard  from './../components/dashboard';
 function Home(props) {
   return ( 
       <div className="mainbackgroundcolor">
-        <Navbar />
+        <Navbar showScrollNav = {true}/>
        {
         props.login ? <Dashboard /> :
        <>
