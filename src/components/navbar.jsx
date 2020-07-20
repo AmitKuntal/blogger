@@ -42,7 +42,7 @@ function Navbar(props) {
              }   
             
         </nav>
-        { props.login ?<ScrollableMenu />:null}
+        { props.login && props.showScrollNav ?<ScrollableMenu />:null}
         </div>
   );
 }

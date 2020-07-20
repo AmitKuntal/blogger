@@ -26,8 +26,8 @@ function Profile(props) {
               </div>
             </li>
             <ColoredLine color="gray" />
-            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">Your Post's</a></li>
-            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">New Post</a></li>
+            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="/story">Your Post's</a></li>
+            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="/create/post">New Post</a></li>
             <ColoredLine color="black" />
             <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li>
             <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li>
