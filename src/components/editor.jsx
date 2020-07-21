@@ -37,11 +37,46 @@ import EditorJs from 'react-editor-js';
 }
 
 function Editor() {
+  const titleEditor = null;
+  const contentEditor = null;
+
+  const saveTitle = async () => {
+    // https://editorjs.io/saving-data
+    try {
+      const outputData = await titleEditor.save()
+      console.log('Title data: ', outputData)
+    } catch (e) {
+      console.log('Title Saving failed: ', e)
+    }
+  }
+
+  const saveContent = async () => {
+    // https://editorjs.io/saving-data
+    try {
+      const outputData = await contentEditor.save()
+      console.log('Content data: ', outputData)
+    } catch (e) {
+      console.log('Content Saving failed: ', e)
+    }
+  }
+
     
     return (<div className="w-full">
-        <EditorJs tools={EDITOR_JS_TOOLS.text}  autofocus={false} placeholder="Enter your Title" minHeight={1} className="text-4xl"/>
-        <EditorJs tools={EDITOR_JS_TOOLS} autofocus={false} placeholder="Enter Your Post Here" />
-        </div>
+            <EditorJs tools={EDITOR_JS_TOOLS.text}  autofocus={false}
+             placeholder="Enter your Title" minHeight={1} 
+             onChange={()=>saveTitle}
+             className="text-4xl"
+             editorInstance={editorInstance => {
+              titleEditor = editorInstance
+              }}/>
+
+            <EditorJs tools={EDITOR_JS_TOOLS} autofocus={false} placeholder="Enter Your Post Here"
+            onChange={()=>saveContent}
+             editorInstance={editorInstance => {
+              contentEditor = editorInstance
+              }}/>
+            />
+            </div>
     );
   }
 
