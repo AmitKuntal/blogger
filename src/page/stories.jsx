@@ -6,10 +6,11 @@ import StoryNavigation from './../components/storynavigation';
 function Stories(props) {
   return ( 
       <div className="mainbackgroundcolor">
-        <Navbar  showScrollNav = {false}/>
+        {props.login?
+        <><Navbar  showScrollNav = {false}/>
         <YourStoryHeading />
-        <StoryNavigation />
-      </div>    
+        <StoryNavigation />    </>:null}
+      </div>
   );
 }
 
