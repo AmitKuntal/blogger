@@ -11,13 +11,13 @@ function Navbar(props) {
       <div className={props.login?"w-full flex flex-row flex-wrap justify-center mainbackgroundcolor":"w-full fixed flex flex-row flex-wrap justify-center mainbackgroundcolor"}>
         <nav className="font-bold w-full container  flex items-center justify-between p-4 h-full sm:text-md sm:pl-2 md:pl-2 lg:pl-8">
             <div className="block sm:block md:hidden sm:mr-2 md:mr-2 lg:mr-6 xl:mr-6">
-                    <a className="text-white hover:text-gray-200" href="#">
+                    <a className="text-white hover:text-gray-200" href="/">
                         <img  className="w-12 h-12 max-w-md" src={require('./../logo.png')} />
                     </a>
             </div>
-            <div className="text-2xl hidden sm:hidden md:block sm:pr-0 md:pr-0 lg-pr-8 xl-pr-8">
+            <a className="text-2xl hidden sm:hidden md:block sm:pr-0 md:pr-0 lg-pr-8 xl-pr-8" href="/">
                 <button className="font-serif font-extrabold">Blogger</button>
-            </div>                 
+            </a>                 
                 {props.login?<Search />
                 :<ul className="w-2/3 hidden sm:hidden md:flex lg:flex items-center justify-end" >
 

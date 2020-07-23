@@ -9,6 +9,7 @@ import Tagline from './../components/tagline';
 import Footer from './../components/footer';
 import Dashboard  from './../components/dashboard';
 function Home(props) {
+  console.log(props.state)
   return ( 
       <div className="mainbackgroundcolor">
         <Navbar showScrollNav = {true}/>
@@ -29,7 +30,8 @@ function Home(props) {
 
 const mapStateToProps =(state)=>{
   return{
-      login:state.login
+      login:state.login,
+      state: state
   }
 }
 
