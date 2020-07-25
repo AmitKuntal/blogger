@@ -1,5 +1,5 @@
 const istate = {
-    login: false,
+    login: true,
     img : require('./../user.png'),
     name: "Name",
     userName: "@UserName"
