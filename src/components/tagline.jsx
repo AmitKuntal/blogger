@@ -41,9 +41,9 @@ function Tagline(props) {
                     <h1 className="w-full font-bold font-serif text-xl sm:text-2xl md:text-4xl lg:text-6xl ">Expand your mind.</h1>    
                 </div>
                 <div className="w-1/3 primarybuttoncolor mt-10 mb-10">
-                    <div className="p-4 pr-4 primarybuttoncolor w-full flex justify-center text-center">
+                    <button className="p-4 pr-4 primarybuttoncolor w-full flex justify-center text-center">
                         <SignIn count ={2} text="Get Started" />
-                    </div>
+                    </button>
                 </div>   
             </div>
         </div>

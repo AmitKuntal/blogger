@@ -6,7 +6,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 function Search(props) {
     const [showModal, setShowModal] = React.useState(false);
     
-  return ( <ul className="w-2/3 flex  items-center justify-end mr-2">
+  return ( <ul className="flex  items-center justify-end mr-4">
             <FontAwesomeIcon icon={faSearch} onClick={() => setShowModal(!showModal)}/>
             {showModal ?<input className="ml-2 hidden sm:hidden md:hidden lg:flex" placeholder="Search Blogger" />:<></>}
             {showModal ? 

@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 function YourStoryHeader(props) {
   return ( 
         <div className="w-full flex justify-center">
-            <div className="mt-4 container w-full flex flex-row items-center justify-between p-4 h-auto text-black bg-black-200">
+            <div className="mt-4 container w-full flex flex-row items-center justify-between p-4 h-auto text-black bg-black-200 sm:pl-2 md:pl-2 lg:pl-8">
                 <div className="w-1/2">
                     <h1 className=" font-bold text-xl sm:text-1xl md:text-2xl lg:text-4xl">Your stories</h1>    
                 </div>
