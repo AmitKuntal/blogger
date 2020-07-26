@@ -23,7 +23,7 @@ export default function Login(props) {
         className = {props.color}
       >
           Sign in
-      </a>:<button className="w-full text-white" onClick={() => setShowModal(true)}>Get Started</button>} 
+      </a>:<span className="w-full text-white text-center" onClick={() => setShowModal(true)}>Get Started</span>} 
       {showModal ? (
         <>
           <div

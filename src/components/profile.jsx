@@ -17,20 +17,20 @@ function Profile(props) {
     <div className="inline-block relative font-light">
         <img src={props.img} className="h-10 w-10 rounded-full inline-flex items-center" onClick = {() =>setShowMenu(!showMenu)}/>
            {showMenu ?
-           <ul className="absolute top-10 right-0  rounded bg-white px-4 py-4 border w-56">
-            <li class="flex flex-row items-center justify-around w-full mb-2">
+           <ul className="absolute top-10 right-0  rounded bg-white p-2 border w-56">
+            <li class="flex items-center">
               <img src={props.img} className="h-10 w-10 rounded-full inline-flex items-center" onClick = {() =>setShowMenu(!showMenu)}/>
-              <div className="flex flex-col">
+              <div className="flex flex-col ml-4">
                 <p>{props.name}</p>
                 <a href="/">{props.userName}</a>
               </div>
             </li>
             <ColoredLine color="gray" />
-            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="/story">Your Post's</a></li>
-            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="/create/post">New Post</a></li>
+            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/story">Your Post's</a>
+            <a class="rounded-b my-2 px-2 block whitespace-no-wrap" href="/create/post">New Post</a>
             <ColoredLine color="black" />
-            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="/profile/userid">Profile</a></li>
-            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li>
+            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/profile/userid">Profile</a>
+            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="#">Logout</a>
            </ul>:null}       
         </div>
   );

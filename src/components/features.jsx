@@ -9,15 +9,15 @@ function Features() {
   return ( 
       <div className="flex flex-col items-center w-auto justify-center">
         <div className="w-4/5 md:w-2/4 container  flex items-center justify-center">
-          <div className="p-4 pr-4 primarybuttoncolor w-full md:w-2/4 flex justify-center">
+          <button className="p-4 pr-4 primarybuttoncolor w-full md:w-2/4 flex justify-center">
            <SignIn count ={2} text="Get Started" />
-          </div>
+          </button>
         </div>
         <div className="container w-4/5 md:w-2/4 flex flex-col items-center justify-center mt-4">
               Already have an account?
-            <div>
+            <button>
               <SignIn count ={1} text="Get Started" color="text-green-400"/>
-            </div>
+            </button>
         </div>
         <div className="container w-auto mt-16 flex flex-col sm:flex-col md:flex-row justify-center mt-4">
             <div className="text-gray-800 p-2 pr-4 flex items-center text-lg m-2">
@@ -47,3 +47,4 @@ function Features() {
 }
 
 export default Features;
+
