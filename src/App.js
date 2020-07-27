@@ -6,6 +6,7 @@ import Home from './page/home';
 import Stories from './page/stories';
 import CreateStory from './page/createstory';
 import Profile from  './page/profile';
+import Settings from './page/settings';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/story" exact component={Stories}/>
       <Route path="/create/post" exact component={CreateStory} />
       <Route path="/profile/:id" exact component={Profile} />
+      <Route path="/account/setting" exact component={Settings} />
     </Router>
   );
 }

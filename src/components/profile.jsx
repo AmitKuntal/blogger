@@ -29,6 +29,7 @@ function Profile(props) {
             <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/story">Your Post's</a>
             <a class="rounded-b my-2 px-2 block whitespace-no-wrap" href="/create/post">New Post</a>
             <ColoredLine color="black" />
+            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/account/setting">Settings</a>
             <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/profile/userid">Profile</a>
             <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="#">Logout</a>
            </ul>:null}       
