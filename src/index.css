@@ -23,3 +23,26 @@
   top: 8vh;
   right:11vw;
 }
+
+.ce-toolbox__button{
+  color: black;
+  border-style: medium;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 100%;
+  outline: none;
+  margin-left: 1.3vw;
+}
+
+.ce-toolbar__plus:hover{
+  color: black;
+}
+
+.ce-toolbar__plus{
+  color: black;
+  border-style: medium;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 100%;
+  outline: none;
+}

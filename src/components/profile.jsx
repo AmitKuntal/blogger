@@ -14,7 +14,7 @@ function Profile(props) {
       />
   );
   return (
-    <div className="inline-block relative font-light">
+    <div className="inline-block relative font-light z-40">
         <img src={props.img} className="h-10 w-10 rounded-full inline-flex items-center" onClick = {() =>setShowMenu(!showMenu)}/>
            {showMenu ?
            <ul className="absolute top-10 right-0  rounded bg-white p-2 border w-56">
@@ -31,7 +31,7 @@ function Profile(props) {
             <ColoredLine color="black" />
             <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/account/setting">Settings</a>
             <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/profile/userid">Profile</a>
-            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="#">Logout</a>
+            <a class="rounded-b mx-2 my-2 block whitespace-no-wrap" href="/logout">Logout</a>
            </ul>:null}       
         </div>
   );
