@@ -15,7 +15,7 @@ export default function SignUpWithEmail(props) {
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                         Your email
                     </label>
-                    <input class=" border-b border-b-4 w-full py-2 px-3 text-gray-700 text-center leading-tight focus:outline-none focus:shadow-outline" value={email?email:""} id="username" type="text" onChange= {handelEmailChange} required/>
+                    <input class=" border-b border-b-4 w-full py-2 px-3 text-gray-700 text-center leading-tight outline-none focus:outline-none" value={email?email:""} id="username" type="text" onChange= {handelEmailChange} required/>
                     <button
                     className=" bg-teal-500 mt-3 pr-6 inline-block text-sm px-4 py-2 leading-none border rounded text-white border-black "
                     type="button"

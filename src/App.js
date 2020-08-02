@@ -7,6 +7,7 @@ import Stories from './page/stories';
 import CreateStory from './page/createstory';
 import Profile from  './page/profile';
 import Settings from './page/settings';
+import Logout from './page/logout';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/create/post" exact component={CreateStory} />
       <Route path="/profile/:id" exact component={Profile} />
       <Route path="/account/setting" exact component={Settings} />
+      <Route path="/logout" exact component={Logout} />
     </Router>
   );
 }

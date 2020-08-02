@@ -1,5 +1,5 @@
 const istate = {
-    login: true,
+    login: localStorage.getItem('login')?true:false,
     img : require('./../user.png'),
     name: "Name",
     userName: "@UserName"
